@@ -1,0 +1,47 @@
+{
+  "name": "my-bikes-life",
+  "version": "0.0.0",
+  "description": "A simple UI for viewing the Strava history of your bike.",
+  "main": "public/app.js",
+  "scripts": {
+    "start": "gulp develop"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "fs": "0.0.2",
+    "griddle-react": "^0.2.14",
+    "jquery": "^2.1.4",
+    "less": "^2.5.3",
+    "path": "^0.12.7",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "reactify": "^1.1.1",
+    "underscore": "^1.8.3"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanfordstudent/my-bikes-life"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "grunt": "^0.4.5",
+    "grunt-jsxhint": "^0.6.0",
+    "grunt-react": "^0.12.3",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-reactify": "^3.0.1",
+    "gulp-watch": "^4.3.5",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
