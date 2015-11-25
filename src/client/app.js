@@ -1,4 +1,5 @@
-var React 	   = require('react'),
-    Viewer = require('./react-components/viewer.jsx');
+var React     = require('react'),
+    ReactDOM  = require('react-dom'),
+    Viewer    = require('./react-components/viewer.jsx');
 
-React.render(React.createElement(Viewer, null), document.getElementById('content'));
+ReactDOM.render(React.createElement(Viewer, null), document.getElementById('content'));

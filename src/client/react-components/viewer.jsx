@@ -1,18 +1,24 @@
 var React = require('react'),
     Griddle = require('griddle-react'),
-    $ = require('jquery');
+    $ = require('jquery'),
+    _ = require('lodash');
 
 var Viewer = React.createClass({
   getInitialState: function() {
-    return { data: [] };
+    return { data:[] };
   },
   componentDidMount: function() {
-    var data = $.getJSON('/data', function() {
-      this.setState({data: data});
+    var me = this;
+    $.getJSON('/data', function(data) {
+      me.setState({data: data});
     });
   },
   render: function() {
-    return <Griddle result={this.state.data} />
+    return (<Griddle  results={this.state.data}
+                      tableClassName="table"
+                      showFilter={true}
+                      showSettings={true}
+                      columns={["name", "distance", "description", "See rides"]}/>);
   }
 });
 

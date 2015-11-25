@@ -18,14 +18,29 @@ app.listen(app.get('port'), function() {
 app.get('/data', function(req, res){
   var fakeData =  [
     {
-      "id": 0,
-      "name": "Mayer Leonard",
-      "city": "Kapowsin",
-      "state": "Hawaii",
-      "country": "United Kingdom",
-      "company": "Ovolo",
-      "favoriteNumber": 7
-    }
+    "id": "b105767",
+    "primary": false,
+    "name": "Softail POS Trek Garbage Bike",
+    "distance": 47612.8,
+    "resource_state": 3,
+    "brand_name": "Cannondale",
+    "model_name": "Slice",
+    "frame_type": 4,
+    "description": "Best bike EVER!!",
+    "See rides": "http://fakelink"
+  },
+  {
+    "id": "b105763",
+    "primary": false,
+    "name": "Cannondale TT",
+    "distance": 476612.8,
+    "resource_state": 3,
+    "brand_name": "Surly",
+    "model_name": "Long Haul Trucker",
+    "frame_type": 4,
+    "description": "Second best bike EVER!!",
+    "See rides": "http://notreal"
+  }
   ];
 
   res.json(fakeData);

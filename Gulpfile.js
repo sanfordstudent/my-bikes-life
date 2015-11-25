@@ -31,9 +31,13 @@ gulp.task('nodemon', function() {
     var tasks = []
     changedFiles.forEach(function (file) {
       if (path.extname(file) === '.jsx' && !~tasks.indexOf('lint')) {
-        tasks.push(['lint', 'browserify']);
+        tasks.push('lint');
       }
     })
+
+    if (!~tasks.indexOf('browserify')) {
+      tasks.push('browserify');  
+    }
     return tasks
   }
   , ignore: ['node_modules/**', 'Gulpfile.js']
